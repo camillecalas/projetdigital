@@ -11,6 +11,11 @@ body{
     line-height: 22px;
 }
 
+img{
+    display: block;
+    max-width: 100%;  /* Max width 100% mais si elle n'a plus la place, elle va se reduire */
+}
+
 .flex{
     display: flex;
 }
@@ -23,10 +28,13 @@ h2{
     color: #707C46;
     font-weight: 500;
     font-size: 30px;
-
 }
 
 h3{
+    font-size: 18px;
+}
+
+h4{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -35,7 +43,7 @@ h3{
 .vertical-line{
     border-left: 1px solid #707C46;
     display: inline-block;
-    height: 266px;
+    min-height: 266px;
   }
 
 /* PAGE DE GARDE  */
@@ -46,28 +54,30 @@ h3{
 /* NAVIGATION */
 .naviguer{
     border: 4px solid pink;
-    background: url('images/img_ordinateur.png') no-repeat center;
-    /* height: 668px ; */
-    height: 150vh;
+    background: url('images/img_ordinateur.png') no-repeat center top;
+    min-height: 910px;
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 120px;
+    margin-left: 120px;
     margin-bottom: 250px;
 }
+
 
 .articleContainer{
     justify-content: space-around;
 }
 
 
-.containerNaviguer{
+.containerVert{
     border:4px solid red;
     background: #F2F4EE;
     width: min(1100px, 100%);
-    height: 418px;
+    min-height: 418px;
+    
 } 
 
-.containerNaviguer h2{
+.containerVert h2{
     padding-top: 43px;
     padding-left: 39px;
     margin-bottom: 31px;
@@ -75,49 +85,40 @@ h3{
 
 .art{
     width: 263px;
-    height: 266px;
-    margin-left: 56px;
-    margin-right: 56px;
+    min-height: 266px;
+    /* margin-left: 56px;
+    margin-right: 56px; */
     gap: 32px;
+   
 }
 
 
 /* SOBRIETE */
 
-.card img{
-    width: 195px;
-    height: 195px;
-}
-
 .card{
     width: 330px;
-    height: 436px;
+    min-height: 436px;
     border: 4px solid red;
     align-items: center;
-    justify-content: space-between;
-    gap:30px;
+    justify-content: flex-start;
+    gap:71px;
 }
 
 .iconeContainer{
     justify-content: space-around;
-    margin-left: 219px;
-    margin-right: 219px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .sobriete h2{
-    padding-top: 43px;
-    padding-left: 272px;
+    padding-left: 190px;
     margin-bottom: 84px;
-}
-
-.card p{
-    flex-direction: row;
-    align-items: flex-start;
 }
 
 .iconeContainer .vertical-line{
     height: 436px;
   }
+
 
 
 
