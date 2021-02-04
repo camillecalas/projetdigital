@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;   
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.flex{
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+h2{
+    color: #707C46;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.vertical-line{
+    border-left: 1px solid #707C46;
+    display: inline-block;
+    height: 266px;
+  }
+
+/* PAGE DE GARDE  */
+/* EQUIPEMENT  */
+/* STOCKAGE  */
+
+
+/* NAVIGATION */
+.naviguer{
+    border: 4px solid pink;
+    background: url('images/img_ordinateur.png') no-repeat center;
+    /* height: 668px ; */
+    height: 150vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 120px;
+    margin-bottom: 250px;
+}
+
+.articleContainer{
+    justify-content: space-around;
+}
+
+
+.containerNaviguer{
+    border:4px solid red;
+    background: #F2F4EE;
+    width: min(1100px, 100%);
+    height: 418px;
+} 
+
+.containerNaviguer h2{
+    padding-top: 43px;
+    padding-left: 39px;
+    margin-bottom: 31px;
+}
+
+.art{
+    width: 263px;
+    height: 266px;
+    margin-left: 56px;
+    margin-right: 56px;
+    gap: 32px;
+}
+
+
+/* SOBRIETE */
+
+.card img{
+    width: 195px;
+    height: 195px;
+}
+
+.card{
+    width: 330px;
+    height: 436px;
+    border: 4px solid red;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.iconeContainer{
+    justify-content: space-around;
+    margin-left: 219px;
+    margin-right: 219px;
+}
+
+.sobriete h2{
+    padding-top: 43px;
+    padding-left: 272px;
+    margin-bottom: 84px;
+}
+
+.card p{
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.iconeContainer .vertical-line{
+    height: 436px;
+  }
+
+
+
+ /* ********************MEDIA QUERIES - 770px *********************/
+@media (max-width: 770px) {
+/* NAVIGATION */
+/* .naviguer{
+    border: 4px solid pink;
+    background: url('images/img_ordinateur.png') no-repeat center;
+    height: 220px;
+}
+
+.articleContainer{
+    flex-direction: column;
+    justify-content: center
+}
+
+
+.containerNaviguer{
+    border:4px solid red;
+    background: #F2F4EE;
+    /* width: min(1100px, 95%); */
+    
+
+/* } 
+
+.containerNaviguer h2{
+    padding-top: 43px;
+    padding-left: 55px;
+    margin-bottom: 31px;
+}
+
+.art{
+    width: 263px;
+    height: 266px;
+    gap: 32px;
+}  */
+
+
+
+}
