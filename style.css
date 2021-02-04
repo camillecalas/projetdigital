@@ -49,7 +49,18 @@ h4{
 /* PAGE DE GARDE  */
 /* EQUIPEMENT  */
 /* STOCKAGE  */
+.containerStockage{
+justify-content: center;
+align-items: center;
+}
+.containerArticle{
+    border: 4px solid blue;
+    max-width: 596px;
+}
 
+.containerArticle p, h3, h4{
+    margin-top: 30px;
+}
 
 /* NAVIGATION */
 .naviguer{
@@ -106,8 +117,8 @@ h4{
 
 .iconeContainer{
     justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 190px;
+    margin-right: 190px;
 }
 
 .sobriete h2{
