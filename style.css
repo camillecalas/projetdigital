@@ -42,12 +42,6 @@ a:hover {
     background-color: transparent ;
 }
 
- a:active {
-     color: white; 
-    text-decoration: none; 
-    background-color: transparent;
-}
-
 
 /* TITRE */
 .h1_responsive{
@@ -95,9 +89,8 @@ h4{
 
 h1{
     font-size: clamp(50px, 10vw, 96px);
-    line-height: clamp(60px, 10vw, 115px);
+    line-height: clamp(60px, 8vw, 115px);
     display: flex;
-    border: 4px solid red;
     flex-direction: column;
     justify-content:flex-end;
     align-items: flex-end;
@@ -110,7 +103,7 @@ nav{
 }
 
 header {
-    height: 138px;
+    height: 138px; 
     width: 100%;
     gap: 40px;
     justify-content: flex-end;
@@ -223,11 +216,10 @@ nav a {
 .containerStockage{
     justify-content: center;
     align-items: center;
-    gap: 94px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 .containerArticle{
-    border: 4px solid blue;
     max-width: 596px;
 }
 
@@ -248,7 +240,6 @@ nav a {
 /* ********************************************* */
 
 .naviguer{
-    border: 4px solid pink;
     background: url('images/img_ordinateur.png') no-repeat center top;
     min-height: 910px;
     justify-content: flex-end;
@@ -261,7 +252,6 @@ nav a {
 }
 
 .containerVert{
-    border:4px solid red;
     background: #F2F4EE;
     width: min(1100px, 100%);
     min-height: 418px;
@@ -281,14 +271,11 @@ nav a {
 
 
 
-
-
 /* ********************************************* */
 /* SOBRIETE */
 /* ********************************************* */
 
 .sobriete{
-    border: 4px solid yellow;
     /* width: 150vh;
     display: block; */
 }
@@ -296,7 +283,6 @@ nav a {
 .card{
     width: 330px;
     min-height: 436px;
-    border: 4px solid red;
     align-items: center;
     justify-content: flex-start;
     gap:71px;
@@ -400,12 +386,10 @@ nav a {
     h1{
         line-height: 60px;
         display: flex;
-        border: 4px solid red;
         flex-direction: column;
         justify-content:center;
         align-items: center;
         height: 100vh;
-        /* width: 90%; */
     }
 
     nav{
@@ -500,7 +484,6 @@ nav a {
 
     .containerArticle{
         padding: 20px;
-        border: 4px solid blue;
          width: 100%; 
     }
 
@@ -529,7 +512,7 @@ nav a {
     }
 
     .containerVert{
-        border:4px solid red;
+        /* border:4px solid red; */
         width: 100%;
         background: #F2F4EE;
         display: flex;
@@ -552,8 +535,8 @@ nav a {
     }
 
     .naviguer{
-        border: 4px solid pink;
-        background: url('images/img_ordinateur_mobile_v2.png') no-repeat center top;
+        /* border: 4px solid pink; */
+        background: none;
         z-index: 1;
         justify-content: center;
         align-items: center;
@@ -562,13 +545,12 @@ nav a {
     
 
 
-    /* *********************************************
-         SOBRIETE
-     ********************************************* */
+    /* ********************************************* */
+         /* SOBRIETE */
+     /* ********************************************* */
     .card{
         width: 330px;
         min-height: 436px;
-        border: 4px solid red;
         align-items: center;
         justify-content: center;
         gap:70px;
