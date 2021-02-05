@@ -24,14 +24,51 @@ img{
     flex-direction: column;
 }
 
+/* LINK */
+a:link {
+    color: black; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:visited  { color: black; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:hover { 
+    color:#707C46; 
+    text-decoration: none; 
+    background-color: transparent ;
+}
+
+ a:active {
+     color: white; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+
+/* TITRE */
+.h1_responsive{
+    display: none;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 115px;
+}
+
 h2{
     color: #707C46;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 30px;
 }
 
 h3{
     font-size: 18px;
+    font-weight: normal;
 }
 
 h4{
@@ -46,12 +83,148 @@ h4{
     min-height: 266px;
   }
 
+
+
+/* ********************************************* */
 /* PAGE DE GARDE  */
+/* ********************************************* */
+.accueil {
+    min-height: 917px;
+    background: url('images/img_accueil.png') no-repeat center / cover;   
+}
+
+h1{
+    font-size: clamp(50px, 10vw, 96px);
+    line-height: clamp(60px, 10vw, 115px);
+    display: flex;
+    border: 4px solid red;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+    height: 50vh;
+    width: 90%;
+}
+
+nav{
+    gap:50px;
+}
+
+header {
+    height: 138px;
+    width: 100%;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 170px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.burger {
+    display: none;
+}
+
+
+
+/* ********************************************* */
 /* EQUIPEMENT  */
+/* ********************************************* */
+.equipement{
+    margin-top: 119px;
+    margin-bottom: 200px;
+}
+
+.equipement h2{
+    margin-bottom: 81px;
+    margin-left: 165px;
+}
+
+.containerequipmt p, h3, h4{
+    margin-top: 30px;
+}
+
+
+.l1, 
+.l2{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.l3{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box{
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.box1, .box4{
+    width: 439px;
+    height: 281px;
+    border: 1px solid #707C46;
+}
+
+.box2, .box3{
+    width: 885px;
+    height: 279px;
+}
+
+.box2{
+    background: #ECF2E4;
+}
+
+.box3{
+    background:url('images/backgd.png');
+}
+
+
+.box5{
+    width: min(1351px, 100%);
+    height: 248px;
+    background: #ECF2E4;
+}
+
+
+
+
+
+
+/* ********************************************* */
 /* STOCKAGE  */
+/* ********************************************* */
+.containerArticle h2{
+    margin-bottom: 31px;
+}
+
+
+.reseauResponsive{
+    display: none;
+}
+
+.containerStockage img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: -199px 0px 0px 100px #ECF2E4;
+}
+
 .containerStockage{
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 94px;
+    flex-wrap: wrap;
 }
 .containerArticle{
     border: 4px solid blue;
@@ -62,49 +235,63 @@ align-items: center;
     margin-top: 30px;
 }
 
+.lien{
+    color:#707C46;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+
+/* ********************************************* */
 /* NAVIGATION */
+/* ********************************************* */
+
 .naviguer{
     border: 4px solid pink;
     background: url('images/img_ordinateur.png') no-repeat center top;
     min-height: 910px;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 120px;
-    margin-left: 120px;
-    margin-bottom: 250px;
+    margin: 200px 120px;
 }
-
 
 .articleContainer{
     justify-content: space-around;
 }
-
 
 .containerVert{
     border:4px solid red;
     background: #F2F4EE;
     width: min(1100px, 100%);
     min-height: 418px;
-    
 } 
 
 .containerVert h2{
     padding-top: 43px;
-    padding-left: 39px;
+    padding-left: 30px;
     margin-bottom: 31px;
 }
 
 .art{
     width: 263px;
     min-height: 266px;
-    /* margin-left: 56px;
-    margin-right: 56px; */
     gap: 32px;
-   
 }
 
 
+
+
+
+/* ********************************************* */
 /* SOBRIETE */
+/* ********************************************* */
+
+.sobriete{
+    border: 4px solid yellow;
+    /* width: 150vh;
+    display: block; */
+}
 
 .card{
     width: 330px;
@@ -119,55 +306,286 @@ align-items: center;
     justify-content: space-around;
     margin-left: 190px;
     margin-right: 190px;
+    margin-bottom: 200px;
 }
 
 .sobriete h2{
-    padding-left: 190px;
-    margin-bottom: 84px;
+    padding-left: 215px;
+    margin-bottom: 81px;
 }
 
 .iconeContainer .vertical-line{
     height: 436px;
-  }
-
-
-
-
- /* ********************MEDIA QUERIES - 770px *********************/
-@media (max-width: 770px) {
-/* NAVIGATION */
-/* .naviguer{
-    border: 4px solid pink;
-    background: url('images/img_ordinateur.png') no-repeat center;
-    height: 220px;
-}
-
-.articleContainer{
-    flex-direction: column;
-    justify-content: center
 }
 
 
-.containerNaviguer{
-    border:4px solid red;
-    background: #F2F4EE;
-    /* width: min(1100px, 95%); */
+
+
+/* ********************MEDIA QUERIES - 900px *********************/
+@media (max-width: 900px) {
+    /********************************************** */
+    /* BODY */
+    /* ********************************************* */
+    .vertical-line{
+        display: none;
+    }
+
+    /* ********************************************* */
+    /* menu burger */
+    /* ********************************************* */
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .burger span{
+        width: 40px;
+        height: 5px;
+        background: #707C46;
+        border-radius: 54px;
+        margin: 6px 0;
+        display: block;  /* span sont des elements de types inline, display block permet de les faire prendre toutes la largeur et de commencer a la ligne */
+    }
+
+    .burger{
+        padding: 10px;
+        z-index: 1;  /* pour que le logo et le burger passe devant */
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #ECF2E4;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        transform: translateX(100%);  /* translateX je deplace de 100% de sa taille vers la droite  -- -100% ca irait vers la gauche  - si on met Y ca change l'axe vers le haut ou le bas*/
+        transition: .5s;
+    }
+
+    .menu-open{
+        transform: translateX(0); /* quand je clique mon menu revient en position normal */
+    }
+
+
+    /* ********************************************* */
+    /* PAGE DE GARDE  */
+    /* ********************************************* */
+
+    .h1_responsive{
+        display: flex;
+    }
+
+    .h1_normal{
+        display: none;
+    }
+
+    .accueil {
+        width: 100%;
+        min-height: auto;
+        background: url('images/img_accueil_responsive.png') no-repeat center / cover;   
+        margin-bottom: 0px;
+    }
+
+    h1{
+        line-height: 60px;
+        display: flex;
+        border: 4px solid red;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        /* width: 90%; */
+    }
+
+    nav{
+        gap:50px;
+    }
+
+    header {
+        height: 138px;
+        width: 100%;
+        gap: 40px;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+
+    /* ********************************************* */
+    /* EQUIPEMENT  */
+    /* *********************************************  */
+
+     .equipement{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .equipement h2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 84px;
+        margin-left: 0px;
+        }
+    
+    .containerequipmt p, h3, h4{
+        margin-top: 30px;
+    }
+    
+    
+    .l1, 
+    .l2, .l3 {
+        gap: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .box{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box1, .box4{
+        width: 100%;
+    }
+    
+    .box2, .box3{
+        width: 100%;
+    }
+    
+    .box3{
+        background:url('images/img_tablette_responsive.png') no-repeat center / cover;
+        border: none;
+    }
+    
+    .box5{
+        width: 100%;
+        height: 485px;
+    }  
+
+
+    /* ********************************************* */
+    /* STOCKAGE  */
+    /* ********************************************* */
+
+     .reseauResponsive{
+     display: flex;
+    }
+
+    .reseau{
+        display: none;
+    }
+    
+    .containerStockage img{
+    margin-top: 110px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    }
+
+    .containerStockage{
+        gap: 0px;
+    }
+
+    .containerArticle{
+        padding: 20px;
+        border: 4px solid blue;
+         width: 100%; 
+    }
+
+    .containerArticle p, h3, h4{
+        margin-top: 30px;
+    }
+
+    .containerArticle  h2{
+        display:none;
+        margin-top: 110px; 
+    }
+
+    .stockageResponsive{
+        display: flex;
+    }
+     
+
+    /* ********************************************* */
+    /* NAVIGATION */
+    /* ********************************************* */
+    
+      .articleContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerVert{
+        border:4px solid red;
+        width: 100%;
+        background: #F2F4EE;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        padding-left: 20px;
+        padding-right: 20px; 
+       
+    }  
+
+    .containerVert h2{
+        text-align: center;
+        align-items: center;
+        padding: 100px 0px 50px 0px;
+    }
+
+    .art{
+        width: 100%;
+        gap: 0px;
+    }
+
+    .naviguer{
+        border: 4px solid pink;
+        background: url('images/img_ordinateur_mobile_v2.png') no-repeat center top;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px;
+    } 
     
 
-/* } 
 
-.containerNaviguer h2{
-    padding-top: 43px;
-    padding-left: 55px;
-    margin-bottom: 31px;
-}
+    /* *********************************************
+         SOBRIETE
+     ********************************************* */
+    .card{
+        width: 330px;
+        min-height: 436px;
+        border: 4px solid red;
+        align-items: center;
+        justify-content: center;
+        gap:70px;
+    }
 
-.art{
-    width: 263px;
-    height: 266px;
-    gap: 32px;
-}  */
+    .iconeContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 100px;
+    }
 
-
-
+    .sobriete h2{
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 84px;
+    } 
 }

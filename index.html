@@ -10,16 +10,95 @@
 </head>
 
 <body>
+
+
     <!-- PAGE DE GARDE -->
+    <section class="accueil">
+        <header class="flex">
+                <nav class="flex">
+                <a href="#Equipement">EQUIPEMENT</a>
+                <a href="#Stockage">STOCKAGE</a>
+                <a href="#Navigation">NAVIGATION</a>
+                <a href="#Sobriete">SOBRIETE</a>
+            </nav>
+            <!-- menu burger -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    
+    
+            <h1 class="h1_normal">Que faire pour  <br>remédier à la <br>pollution digitale ?</h1>
+            <h1 class="h1_responsive">Que faire pour  <br>remédier à la <br>pollution <br>digitale ?</h1>
+        
+    </section>
+
+
 
     <!-- EQUIPEMENT -->
 
+    <section id="Equipement" class="equipement ">
+
+        <h2>EQUIPEMENT</h2>
+
+        <div class="containerequipmt">
+
+            <div class="l1 flex">
+                <div class="box box1 flex">
+                    <p>Privilégier les imprimantes qui permettent de remplacer chaque couleur indépendamment.</p></div>
+
+               <div class="box box2 flex">
+                    <article class="box_art2">
+                        <h3>RECYCLER SON MATERIEL</h3>
+                        <p> En France, il est possible de déposer ses déchets d’équipements électriques et électroniques (DEEE) dans de nombreux magasins, ainsi que dans des ressourceries, il en existe  une cinquantaine dans Paris intra-muros.</p>
+                    </article>
+               </div>
+            </div>
+
+            <div class="l2 flex">
+                <div class="box box3 flex">
+                    <article class="box_art3">
+                        <h3>EVITER DE MULTIPLIER LES APPAREILS</h3>
+                        <p>Il est préférable d’avoir un appareil multifonction qui permet à la fois d’imprimer, photocopier et scanner plutôt que trois appareils indépendants consommant trois fois plus.</p>
+                    </article>
+                </div>
+
+               <div class="box box4 flex">
+                   <article class="box_art4">
+                        <h3>ENTRETIEN</h3>
+                        <p>Il est vivemenent recommandé d'équiper son matériel, d'une protection anti-virus pour éviter les pannes.</p> 
+                    </article>
+               </div>
+            </div>
+
+            <div class="l3 flex">
+                <div class="box box5 flex">
+                    <article class="box_art5">
+                        <h3>PRIVILEGIER LES APPAREILS ECORESPONSABLES</h3>
+                        <p> Des appareils écoresponsables et aussi plus solides existent pour lutter contre l’obsolescence programmée. La marque Fairphone propose des téléphones qui peuvent etre “upgradé” autant que souhaité. Acheter des appareils reconditionnés, afin de prolonger au maximum leur durée de vie. Vous pouvez apporter votre appareil électronique à un repair café, où l’on vous accompagnera (gratuitement) pour réparer votre objet.</p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
     <!-- STOCKAGE -->
-    <section class="stockage">
+    <section id="Stockage" class="stockage">
         <div class="containerStockage flex">
-            <img src="images/Rectangle 25.png" alt="">
+            <div class="stockageResponsive">
+                <h2>STOCKAGE</h2>
+            </div>
+            <img src="images/img_reseau.png" alt="reseau" class="reseau">
+            <img src="images/img_reseau_responsive.png" alt="reseau responsive" class="reseauResponsive">
+
 
             <div class="containerArticle flex column">
+              
                 <h2>STOCKAGE</h2>
 
                 <article class="art1">
@@ -28,7 +107,7 @@
                     <p> Vider régulièrement votre corbeille ou régler ses paramètres pour que votre système d’exploitation le fasse automatiquement de façon régulière. </p>
                     <p> Privilégier, pour ses documents personnels et non partagés, le stockage local (sur  les équipements personnels) au stockage en externe dans les “Clouds” très energivores : cela évite des allers-retours en ligne entre serveurs, fournisseurs d’accès, data centers etc.</p>
                     <p>Pour des documents que l’on doit garder à vie, il est a priori plus écologique d’imprimer un document à conserver à vie plutôt que de le stocker sur un appareil électronique. Pour limiter l’impact de l’impression,  imprimer par exemple en noir et blanc, qualité brouillon, en recto-verso sur du papier recyclé en sachant que l’on peut toujours le renumériser si besoin.</p>
-                    <p>Où sont stockées mes données numériques ? (Lien vers vidéo INC)</p>
+                    <a href="https://www.inc-conso.fr/content/ou-sont-stockees-mes-donnees-numeriques-avec-lademe#:~:text=Le%20stockage%20de%20vos%20donn%C3%A9es,serveur%20mail%20ou%20un%20Cloud" target="_blank"><span class="lien">Où sont stockées mes données numériques ?</span></a> 
                 </article>
 
                 <article class="art2">
@@ -43,7 +122,6 @@
                     Éviter aussi les signatures mails avec des images trop lourdes.</p>
                 </article>
             </div>
-
         </div>
 
 
@@ -56,9 +134,9 @@
 
     <!-- NAVIGATION -->
 
-    <section class="naviguer flex column">
+    <section id="Navigation" class="naviguer flex column">
         <div class="containerVert">
-
+        
             <h2>NAVIGATION</h2>
 
             <div class="articleContainer flex ">
@@ -88,25 +166,25 @@
 
 
     <!-- SOBRIETE -->
-<section class="sobriete">
-    <h2>SOBRIETE</h2>
-    <div class="iconeContainer flex">
-        <div class="card icone1 flex column">
-            <img src="images/icone_prise.png" alt="">
-            <p>Pour limiter la perte d’énergie, brancher ses équipements sur une multiprise à interrupteur et de l’éteindre lorsque qu’ils ne sont pas utilisés. En cas d’absence, veiller à éteindre l’interrupteur d’alimentation de la box internet.</p>
+    <section id="Sobriete" class="sobriete">
+        <h2>SOBRIETE</h2>
+        <div class="iconeContainer flex">
+            <div class="card icone1 flex column">
+                <img src="images/icone_prise.png" alt="">
+                <p>Pour limiter la perte d’énergie, brancher ses équipements sur une multiprise à interrupteur et de l’éteindre lorsque qu’ils ne sont pas utilisés. En cas d’absence, veiller à éteindre l’interrupteur d’alimentation de la box internet.</p>
+            </div>
+            <span class="vertical-line flex column"></span>
+            <div class="card icone2 flex column">
+                <img src="images/icone_ampoule.png" alt="">
+                <p>Penser à activer le « mode économie d’énergie » sur son ordinateur, ou le « mode avion » pour son smartphone, cela augmentera leur autonomie. Désactiver le wifi de la box internet lorsque celui-ci n’est pas utilisé.</p>
+            </div>
+            <span class="vertical-line flex column"></span>
+            <div class="card icone3 flex column">
+                <img src="images/icone_terre.png" alt="">
+                <p>Désactiver les notifications, le GPS, le wi-fi et Bluetooth. Penser à fermer ou supprimer les applications inutilisées sur son smartphone. </p>
+            </div>
         </div>
-        <span class="vertical-line flex column"></span>
-        <div class="card icone2 flex column">
-            <img src="images/icone_ampoule.png" alt="">
-            <p>Penser à activer le « mode économie d’énergie » sur son ordinateur, ou le « mode avion » pour son smartphone, cela augmentera leur autonomie. Désactiver le wifi de la box internet lorsque celui-ci n’est pas utilisé.</p>
-        </div>
-        <span class="vertical-line flex column"></span>
-        <div class="card icone3 flex column">
-            <img src="images/icone_terre.png" alt="">
-            <p>Désactiver les notifications, le GPS, le wi-fi et Bluetooth. Penser à fermer ou supprimer les applications inutilisées sur son smartphone. </p>
-        </div>
-    </div>
-</section>
-
+    </section>
+<script src="app.js"></script>
 </body>
 </html>
